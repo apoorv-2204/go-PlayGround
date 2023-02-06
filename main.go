@@ -2,38 +2,19 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
-func print_values(i int, l int) {
-	for i < l {
-		time.Sleep(300 * time.Millisecond)
-		fmt.Printf(" %d", i)
-		i++
-	}
-}
+// Babylonian method. It starts with an initial guess and then updates it repeatedly until it reaches a desired level of accuracy.
+func squareRoot(number float64, precision int) float64 {
+	var result float64 = 1.0
+	for i := 0; i < precision; i++ {
 
-func print_large(i int, m int) {
-	for i < m {
-		time.Sleep(1 * time.Millisecond)
-		fmt.Printf(" %d", i)
-		i++
+		result = 0.5 * (result + number/result)
 	}
-}
-
-func routine_generator(i int, l int) {
-	for i < l {
-		go print_values(i, i+1)
-		i += 1
-	}
+	return result
 }
 
 func main() {
-
-	// go print_values(1, 100)
-	// go print_large(1001, 2000)
-	fmt.Println("The big bang theory")
-	// print_values(1
-	go routine_generator(1, 100000)
+	fmt.Printf("sqrt of %g \n", squareRoot(22, 10))
 	fmt.Scanln()
 }
