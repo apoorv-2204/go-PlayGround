@@ -1,5 +1,6 @@
+package exercism
+
 // Package weather  forecast provides tools to forecast the current weather condition of various cities .
-package excercism
 
 // CurrentCondition represents a certain weather.
 var CurrentCondition string
