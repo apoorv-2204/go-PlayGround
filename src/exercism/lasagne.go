@@ -1,5 +1,7 @@
 package exercism
 
+var Version string = "v0.1.0"
+
 const OvenTime = 40
 
 func RemainingOvenTime(actualMinutesInOven int) int {

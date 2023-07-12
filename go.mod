@@ -1,3 +1,3 @@
-module go_playground
+module github.com/apoorv-2204/go-PlayGround
 
-go 1.19
+go 1.20

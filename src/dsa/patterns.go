@@ -2,6 +2,8 @@ package dsa
 
 import "fmt"
 
+// var Version string = "0.1"
+
 func Loop() {
 	// for i := 1; i < 11; i++ {
 	// 	fmt.Println(i)

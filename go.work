@@ -1,0 +1,9 @@
+go 1.20
+
+use (
+	.
+	./src/dsa
+	./src/exercism
+	./src/main
+	./src/naive_math
+)

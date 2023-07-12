@@ -1,18 +1,20 @@
-package main
+package dsa
 
 import (
 	"fmt"
 	"log"
 )
 
-func main() {
-	arr := []int{
-		16, 17, 18, 1, 1, 1, 2, 3, 4, 5, 6, 7, 1, 2,
-	}
+var Version string = "0.1.0"
 
-	fmt.Println(PivotIndexBinarySearch(arr))
+// func main() {
+// 	arr := []int{
+// 		16, 17, 18, 1, 1, 1, 2, 3, 4, 5, 6, 7, 1, 2,
+// 	}
 
-}
+// 	fmt.Println(PivotIndexBinarySearch(arr))
+
+// }
 
 // sorted rotated array
 func PivotIndexBinarySearch(arr []int) int {
